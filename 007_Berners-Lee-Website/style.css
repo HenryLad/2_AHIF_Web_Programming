@@ -1,0 +1,53 @@
+article > h1{
+    font-weight: bold;
+
+}
+section > h2{
+    font-weight: bold;
+    font-size: 17px;
+}
+.GrayBorder{
+    border: rgb(154, 155, 160) solid 0.30rem;
+    margin: 7% 20%;
+    padding: 2.789rem;
+    background: rgb(154, 155, 160);
+
+}
+
+body{
+    font-family: "Lucida Sans";
+
+}
+img{
+    width: 200px;
+    height: 256px;
+    border-radius: 2rem;
+    overflow: hidden;
+
+    position: absolute;
+    left: 70rem;
+    top: 18rem;
+}
+ul > li > ul > li{
+    list-style-type: square;
+}
+ul > li{
+    list-style-type: circle;
+}
+table{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+td, th{
+    border: solid 1px black;
+    padding: 5px;
+}
+.FerratiLink{
+    text-decoration: none;
+    color: darkblue;
+}
+.CernLink{
+    text-decoration: none;
+    color: green;
+}

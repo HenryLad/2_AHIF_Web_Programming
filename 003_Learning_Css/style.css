@@ -1,0 +1,29 @@
+.bold-font {
+
+    font-weight: bold;
+
+}
+.ugly-text{
+
+    background: red;
+    color: blue;
+    font-family: "Agency FB";
+}
+span{
+    font-size: 4rem;
+    color: blueviolet;
+
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+
+main
+{
+    color: aqua;
+    background: chartreuse;
+}
+.main section{
+    font-size: 3rem;
+}

@@ -1,0 +1,8 @@
+.RandomClass{
+    border: 23px blue dotted ;
+    margin: 25rem;
+    padding: 14rem;
+}
+img:hover{
+    transform: scaleX();
+}

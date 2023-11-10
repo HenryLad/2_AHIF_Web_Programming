@@ -1,0 +1,51 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 10%;
+}
+article > h1 ~ p{
+    font-weight: bold;
+}
+.BackgroundColorGray{
+    background: lightgray;
+    padding: 0.69rem;
+    border-radius: 1.125rem;
+}
+
+.GreenBorder{
+    border: darkgreen dashed 0.30rem;
+    margin: 1% 0;
+    padding: 0.69rem;
+
+}
+
+section h1{
+    font-style: italic;
+}
+section + section > ul{
+
+    list-style-type: circle;
+
+}
+.redList{
+    color: red;
+    list-style-type: square;
+}
+ol > li > ol > li{
+     list-style-type: armenian;
+}
+
+img{
+    max-width: 40%;
+
+}
+img:hover{
+    border-radius: 50%;
+}
+a{
+    color: red;
+    text-decoration: none;
+
+}
+a:visited{
+    color: red;
+}

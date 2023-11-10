@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Sample Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <article>
+            <h1 class="bold-font">Your first Website</h1>
+            <p>Recreate this simple website using all the skills we learnt in the last couple weeks.</p>
+            <p class="BackgroundColorGray">You will need both HTML (be careful to use the proper structure!) and various CSS rules. This paragraph has a lightgray
+                background color and slightly rounded edges. Make sure the text does not protrude from the background despite the
+                rounded corners.</p>
+            <p>Paragraphs which are siblings to a h1 which is a direct descendent of an article use bold font.</p>
+        <h1>Task 1</h1>
+        <section class="GreenBorder">
+            <h1>General Body Rules</h1>
+            <ul>
+                <li>Uses a font without serifs</li>
+                <li>a 10% margin all around</li>
+                <li>All values have to be relative</li>
+            </ul>
+            <p>Some sections are highlighted:</p>
+            <ul>
+                <li>They have a green, dashed border</li>
+                <li>A bit of padding</li>
+                <li>Some top & bottom margins (but not left or right margins)</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Special List</h1>
+            <ul>
+                <li>An unordered list in a section which directly succeeds another section</li>
+                <li>Uses circles as bullet points</li>
+                <li class="redList">Except for this one item which decided to use a square and color itself red</li>
+            </ul>
+            <h1>Heading in Section</h1>
+            <p>A h1 in a section uses italics. Those in an article do not.</p>
+            <p class="BackgroundColorGray">This paragraph has a lightgray background color and slightly rounded edges. The second time we need this logic... so? What are
+                you going to do?</p>
+
+        </section>
+        <h1>Task 2</h1>
+        <section>
+            <h1>Some Enumerations</h1>
+            <ol>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Some nested values with Armenianen Numbers
+                    <ol>
+                        <li>A</li>
+                        <li>B</li>
+                        <li>C</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+        <section class="GreenBorder">
+            <h1>A Histroy Lesson</h1>
+            <p>Include the provided image. If the user hovers over it display its 'center' within an ellipse. <strong>Also make sure that it has a width of at
+                most 40%</strong></p>
+            <img src="napoleon.jpg" alt="Napoleon Abi">
+            <p><a href="https://en.wikipedia.org/wiki/Napoleon">Click here to learn more about Napoleon in Wikipedia.</a> The previous link is colored red instead of blue, not underlined and will not
+                change its styling after the user visited it</p>
+        </section>
+    </article>
+</body>
+</html>
