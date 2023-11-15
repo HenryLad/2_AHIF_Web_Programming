@@ -1,19 +1,36 @@
-
-div > h1{
+div>h1 {
    text-align: center;
    font-size: 4.5em;
-   color: green;
+   color: 7b1ec7;
+   font-family: "Goudy Bookletter 1911", sans-serif;
 }
-h1 > a{
+
+h1>a {
    text-decoration: none;
-   color: green;
+   color: 7b1ec7;
 }
-body{
-   background-image: url(Background.jpeg);
+
+body {
+   background-image: url(Background.jpg);
 }
-article{
-   border-radius: 10px solid 212121;;
+
+article {
+   border-radius: 10px solid 212121;
+   border-radius: 10px;
+   overflow: hidden;
    background-color: 212121;
-   margin: 4rem 4rem ;
+   margin: 4rem 4rem;
    padding: 1.5rem 1.5rem;
+   
+}
+div {
+   transition: transform 2s;
+}
+
+div:hover {
+   transform: scale(1.150);
+}
+
+div:not(:hover) {
+   transform: scale(1);
 }
