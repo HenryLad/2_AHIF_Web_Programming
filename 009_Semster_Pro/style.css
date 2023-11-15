@@ -1,0 +1,19 @@
+
+div > h1{
+   text-align: center;
+   font-size: 4.5em;
+   color: green;
+}
+h1 > a{
+   text-decoration: none;
+   color: green;
+}
+body{
+   background-image: url(Background.jpeg);
+}
+article{
+   border-radius: 10px solid 212121;;
+   background-color: 212121;
+   margin: 4rem 4rem ;
+   padding: 1.5rem 1.5rem;
+}
