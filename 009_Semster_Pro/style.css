@@ -1,4 +1,35 @@
-div>h1 {
+
+html {
+   scroll-behavior: smooth;
+   transition: scroll 4s ease-in-out;
+ }
+
+body {
+   background-image: url(Background.jpg);
+   color: white;
+}
+
+article {
+   border: 10px solid 212121;
+   border-radius: 10px;
+   overflow: hidden;
+   background-color: 212121;
+   margin: 4rem 4rem;
+   padding: 1.5rem 1.5rem;
+   
+}
+h1 {
+   transition: transform 2s;
+}
+
+h1:hover {
+   transform: scale(1.150);
+}
+
+h1:not(:hover) {
+   transform: scale(1);
+}
+h1 {
    text-align: center;
    font-size: 4.5em;
    color: 7b1ec7;
@@ -9,28 +40,36 @@ h1>a {
    text-decoration: none;
    color: 7b1ec7;
 }
-
-body {
-   background-image: url(Background.jpg);
-}
-
-article {
-   border-radius: 10px solid 212121;
+table {
+   color: white;
+   width: 100%;
+   text-align: center;
+   border-collapse: collapse;
+   border: 3px solid white ;
    border-radius: 10px;
-   overflow: hidden;
-   background-color: 212121;
-   margin: 4rem 4rem;
-   padding: 1.5rem 1.5rem;
-   
-}
-div {
-   transition: transform 2s;
+   table-layout: fixed;
+   width: 40rem;
+   margin: 0 auto; 
+   font-size: 1.3rem;
 }
 
-div:hover {
-   transform: scale(1.150);
+thead {
+   color: white;
+   text-align: center;
+   border: 3px solid white;
+   border-radius: 10px; 
+   padding: 0.5rem 0.5rem;
 }
 
-div:not(:hover) {
-   transform: scale(1);
+td, th, tr {
+   border: 3px solid white;
+   padding: 0.5rem 0.5rem;
+}
+td > a {
+   color: white;
+   text-decoration: none;
+}
+#ApiCoreSection{
+   margin-top: 200rem;
+   transition: 2s;
 }
