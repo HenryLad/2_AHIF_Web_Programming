@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cross-Platform Web App with ASP.NET Core</title>
-   <link rel="stylesheet" href="CrossPlattform.css">
+   <title>Cross Platform</title>
+   <link rel="stylesheet" href="InfoText.css">
 </head>
 
+</html>
 <body>
    <section class="MenuBar">
       <table>
@@ -38,7 +37,7 @@ bash
 dotnet new web -n MyWebApp
 cd MyWebApp
         </code>
-    </pre>
+      </pre>
 
       <p>Open the project in your chosen IDE.</p>
 
@@ -46,11 +45,11 @@ cd MyWebApp
 
       <pre>
         <code class="bash">
-         bash
-         dotnet build
-         dotnet run
+bash
+dotnet build
+dotnet run
         </code>
-    </pre>
+      </pre>
 
       <p>Open your web browser and navigate to <a href="http://localhost:5000" target="_blank">http://localhost:5000</a>
          to
@@ -66,7 +65,7 @@ bash
 dotnet new webapi -n MyWebService
 cd MyWebService
         </code>
-    </pre>
+      </pre>
 
       <p>Open the project in your chosen IDE.</p>
 
@@ -78,7 +77,7 @@ bash
 dotnet build
 dotnet run
         </code>
-    </pre>
+      </pre>
 
       <p>The service will be accessible at <a href="http://localhost:5000/api/values"
             target="_blank">http://localhost:5000/api/values</a>.</p>
@@ -89,14 +88,12 @@ dotnet run
 
       <pre>
         <code class="dockerfile">
-               Dockerfile
-
-               FROM mcr.microsoft.com/dotnet/aspnet:5.0
-               WORKDIR /app
-               COPY bin/Debug/net5.0/publish/ .
-               ENTRYPOINT ["dotnet", "MyWebApp.dll"]
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
+WORKDIR /app
+COPY bin/Debug/net5.0/publish/ .
+ENTRYPOINT ["dotnet", "MyWebApp.dll"]
         </code>
-    </pre>
+      </pre>
 
       <p>Make sure to adjust the COPY command based on your project structure.</p>
 
@@ -109,7 +106,7 @@ dotnet run
 bash
 docker build -t mywebapp .
         </code>
-    </pre>
+      </pre>
 
       <p>Run the Docker container:</p>
 
@@ -118,7 +115,7 @@ docker build -t mywebapp .
 bash
 docker run -p 8080:80 mywebapp
         </code>
-    </pre>
+      </pre>
 
       <p>Access your web app in a browser at <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>.
       </p>
@@ -130,7 +127,5 @@ docker run -p 8080:80 mywebapp
          coding!
       </p>
    </article>
-
 </body>
-
 </html>

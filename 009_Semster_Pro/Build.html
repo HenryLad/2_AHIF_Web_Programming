@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Build</title>
+   <link rel="stylesheet" href="InfoText.css">
+</head>
+
+<body>
+   <section class="MenuBar">
+      <table>
+         <thead>
+            <tr>
+               <td><a href="index.html"><img src="Untitled-1.png" alt="Logo"></a></td>
+               <td class="NetCoreSection"><a href="NetCoreSection.html">.Net</a></td>
+               <td>Why .Net 8.0</td>
+               <td>Explore Fetuares .Net 8.0</td>
+               <td>Docs</td>
+               <td><a href="https://dotnet.microsoft.com/en-us/download">Downloads</a></td>
+               <td><a href="https://dotnet.microsoft.com/en-us/platform/community">Community</a></td>
+            </tr>
+         </thead>
+      </table>
+   </section>
+   <article>
+      <h1>Building Web Apps and Services for Multiple Platforms</h1>
+
+      <h2>Getting Started</h2>
+
+      <p>Develop web applications and services that run seamlessly on macOS, Windows, Linux, and Docker. Below are the
+         steps to create a cross-platform project:</p>
+
+      <pre>
+        <code class="code">
+# Create a new web app project
+dotnet new web -n MyWebApp
+
+# Change to the project directory
+cd MyWebApp
+        </code>
+      </pre>
+
+      <p>Open the project in your preferred IDE and start building!</p>
+
+      <h2>Building and Running the App</h2>
+
+      <p>Build and run the application using the following commands:</p>
+
+      <pre>
+        <code class="code">
+# Build the app
+dotnet build
+
+# Run the app
+dotnet run
+        </code>
+      </pre>
+
+      <p>Visit <a href="http://localhost:5000" target="_blank">http://localhost:5000</a> to see your web app in action.
+      </p>
+
+      <h2>Creating a Cross-Platform Service</h2>
+
+      <p>For building a cross-platform service, use the following commands:</p>
+
+      <pre>
+        <code class="code">
+# Create a new web API project
+dotnet new webapi -n MyWebService
+
+# Change to the project directory
+cd MyWebService
+        </code>
+      </pre>
+
+      <p>Open the project in your IDE, build, and run the service using similar commands as above.</p>
+
+      <h2>Containerizing with Docker</h2>
+
+      <p>Create a Dockerfile in the project directory:</p>
+
+      <pre>
+        <code class="code">
+# Dockerfile
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
+WORKDIR /app
+COPY bin/Debug/net5.0/publish/ .
+ENTRYPOINT ["dotnet", "MyWebApp.dll"]
+        </code>
+      </pre>
+
+      <p>Adjust the COPY command based on your project structure. Build and run the Docker container:</p>
+
+      <pre>
+        <code class="code">
+# Build the Docker image
+docker build -t mywebapp .
+
+# Run the Docker container
+docker run -p 8080:80 mywebapp
+        </code>
+      </pre>
+
+      <p>Access your web app in a browser at <a href="http://localhost:8080" target="_blank">http://localhost:8080</a>.
+      </p>
+
+      <h2>Conclusion</h2>
+
+      <p>You've successfully set up a project to build web apps and services that can run on macOS, Windows, Linux, and
+         Docker. Feel free to extend and deploy your application on various platforms. Happy coding!</p>
+   </article>
+</body>
+
+</html>

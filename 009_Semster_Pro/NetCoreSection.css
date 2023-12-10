@@ -44,7 +44,7 @@ td > a {
 }
 
 .Header {
-   color: #7b1ec7;
+   color: #831ec7;
    font-size: 2.8rem;
    font-weight: bolder;
    text-align: center;
@@ -79,7 +79,6 @@ h1 > strong {
    border: 2px solid #c3c6ce;
    transition: 0.5s ease-out;
    overflow: visible;
-   margin: 0rem 50rem 0rem 50rem;
 }
 
 #Build .card-details {
@@ -118,7 +117,7 @@ h1 > strong {
    border: 2px solid #c3c6ce;
    transition: 0.5s ease-out;
    overflow: visible;
-   margin: 0rem 50rem 0rem 50rem;
+
 
 }
 
@@ -145,7 +144,6 @@ h1 > strong {
 #MobileDesktop .card:hover {
    border-color: #d600aa;
    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-   margin: 0rem 50rem 0rem 50rem;
    scale: 1.2;
 }
 #Cloud .card {
@@ -158,7 +156,7 @@ h1 > strong {
    border: 2px solid #c3c6ce;
    transition: 0.5s ease-out;
    overflow: visible;
-   margin: 0rem 50rem 0rem 50rem;
+
 }
 
 #Cloud .card-details {
@@ -178,11 +176,11 @@ h1 > strong {
    font-size: 1.5em;
    font-weight: bold;
    padding-top: 0.3rem; /* Added "em" unit */
-   color: #0856cc;
+   color: #08ccab;
 }
 
 #Cloud .card:hover {
-   border-color: #0856cc;
+   border-color: #08ccab;
    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
    scale: 1.2;
 }
@@ -196,7 +194,7 @@ h1 > strong {
    border: 2px solid #c3c6ce;
    transition: 0.5s ease-out;
    overflow: visible;
-   margin: 0rem 50rem 0rem 50rem;
+   font-family: cursive;
 }
 
 #Microservices .card-details {
@@ -209,19 +207,108 @@ h1 > strong {
 #Microservices.text-body {
    color: black;
    font-size: 16px;
-   font-family: cursive;
+   font-size: 1.2rem;
+
 }
 
-#Microservices .text-title {
+#Microservices .text-title  {
    font-size: 1.5em;
    font-weight: bold;
    padding-top: 0.3rem; /* Added "em" unit */
-   color: #3d20a1;
+   color: #0011ff;
 }
-
+.text-title > a {
+   text-decoration: none;
+   color: #0011ff;
+}
 #Microservices .card:hover {
-   border-color: #3d20a1;
+   border-color: #0011ff;
    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
    scale: 1.2;
 }  
 /* End of the Cards */
+.AlignBoxes{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 2rem;
+}
+.AboutDotNet{
+   padding-left: 5rem;
+   padding-right: 5rem;
+   font-size: 1.4rem;
+   font-family: cursive;
+   padding-top: 1.3rem;
+   
+}
+.HeaderDotNet{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 2s;
+}
+.HeaderDotNet:hover{
+   transform: scale(1.4);
+}
+.HeaderDotNet:not(:hover){
+   transform: scale(1);
+}
+
+.HeaderDotNet > h1{
+   font-size: 2.5rem;
+   font-weight: bolder;
+   color: #831ec7;
+   padding: 1.3rem;
+}
+.KeyFeatures {
+   font-size: 2.5rem;
+   font-family: serif;
+   padding-top: 1.3rem;
+   font-weight: bolder;
+   color: #831ec7;
+   transition: 2s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.KeyFeatures:hover{
+   transform: scale(1.4);
+}
+.KeyFeatures:not(:hover){
+   transform: scale(1);
+}
+article{
+   background-color: #f5f5f5;
+   border: solid #f5f5f5 1px;
+   border-radius: 5%;
+   margin: 4rem;
+}
+.ListOfFeatures > ul {
+   list-style: none; 
+}
+.ListOfFeatures{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+}
+.DesginFeatures{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+   padding: 2rem;
+}
+p > strong{
+   font-size: 1.6rem;
+   font-weight: bolder;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.DesignOfPahragrapes{
+   font-size: 1rem;
+   padding: 4rem;
+   font-family: cursive;
+}

@@ -1,0 +1,134 @@
+
+#nav {
+   float: left;
+   margin-right: 1%;
+   width: 19%;
+   height: 100%;
+   background: linear-gradient(0deg, rgba(0,212,255,0.6) 0%, rgba(9,9,121,0.6) 35%, rgba(2,0,36,0.8) 100%);
+}
+#content {
+   float: right;
+   width: 80%;
+   height: 100%;
+   overflow-y: scroll;
+}
+html, body {
+   height: 99%;
+   width: 99%;
+}
+body {
+   font-family: Consolas, sans-serif;
+}
+h1 {
+   font-family: Helvetica, serif;
+}
+
+#nav > h1 {
+   font-size: 2rem;
+   color: whitesmoke;
+   padding-left: 2rem;
+}
+#nav > ul > li > a{
+   text-decoration: none;
+   color: whitesmoke;
+   list-style: none;
+}
+#nav li a {
+   padding: 2px;
+}
+
+#nav li a:hover {
+   color: black;
+   background-color: white;
+   border-radius: 3px;
+}
+
+/* general info*/
+ul.checking {
+   padding-left: 15px;
+   list-style-type: "□ ";
+}
+
+#content a {
+   color: blue;
+   text-decoration: none;
+}
+
+table.products th {
+   text-align: left;
+   padding: 1wpx;
+   background-color: rgba(2, 0, 36, 0.8);
+   color: white;
+}
+
+table.products td {
+   border-bottom: 1px solid;
+   padding: 5px 5px 5px 10px;
+}
+
+table.products td ul {
+   padding-left: 37px;
+}
+
+table.products tr:nth-child(even) {
+   background-color: whitesmoke;
+}
+
+table.products {
+   border-collapse: collapse;
+   width: 80%;
+}
+
+table.seasonal {
+   border-collapse: collapse;
+   width: 100%;
+}
+
+table.seasonal caption {
+   font-weight: bold;
+   font-size: 1.5345rem;
+   border: 1px solid;
+   border-bottom: none;
+
+}
+
+table.seasonal th {
+   border: solid black;
+   vertical-align: top;
+   text-align: left;
+}
+
+table.seasonal td {
+   border: solid black;
+}
+
+table.seasonal th,
+table.seasonal td {
+   font-size: 90%;
+}
+
+table.seasonal tr td:nth-child(4n) {
+   padding-left: 15px;
+}
+
+
+
+
+table.seasonal tr:nth-child(n+3) td:nth-child(2),
+table.seasonal td:nth-child(3) {
+   color: green;
+   text-align: center;
+}
+
+table.seasonal td span {
+   font-style: italic;
+}
+
+table.seasonal td.seasonal {
+   color: red;
+}
+
+table.seasonal ul {
+   list-style-type: square;
+   padding-left: 10px;
+}

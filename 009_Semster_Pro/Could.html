@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cloud</title>
+   <link rel="stylesheet" href="InfoText.css">
+</head>
+<body>
+   <body>
+      <section class="MenuBar">
+         <table>
+            <thead>
+               <tr>
+                  <td><a href="index.html"><img src="Untitled-1.png" alt="Logo"></a></td>
+                  <td class="NetCoreSection"><a href="NetCoreSection.html">.Net</a></td>
+                  <td>Why .Net 8.0</td>
+                  <td>Explore Fetuares .Net 8.0</td>
+                  <td>Docs</td>
+                  <td><a href="https://dotnet.microsoft.com/en-us/download">Downloads</a></td>
+                  <td><a href="https://dotnet.microsoft.com/en-us/platform/community">Community</a></td>
+               </tr>
+            </thead>
+         </table>
+      </section>
+      <article>
+         <h1>Building Scalable and Resilient Cloud-Native Apps</h1>
+   
+         <h2>Introduction to Cloud-Native Development</h2>
+   
+         <p>Cloud-native development involves leveraging cloud services, serverless architectures, and container technologies to build scalable and resilient applications that can run on various cloud providers.</p>
+   
+         <h2>Scalability in the Cloud</h2>
+   
+         <p>Scalability is a key aspect of cloud-native apps. Here's an example of deploying a scalable microservices architecture:</p>
+   
+         <pre>
+           <code class="cloudcode">
+   # Terminal commands to deploy microservices
+   kubectl apply -f service1-deployment.yaml
+   kubectl apply -f service2-deployment.yaml
+   # ... add more services ...
+           </code>
+         </pre>
+   
+         <h2>Resilience with Cloud-Native Architecture</h2>
+   
+         <p>Building resilient apps involves handling failures gracefully. Here's an example of implementing retries in your code:</p>
+   
+         <pre>
+           <code class="cloudcode">
+   // C# code using Polly for resilience
+   var policy = Policy
+       .Handle<HttpRequestException>()
+       .WaitAndRetry(3, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
+   
+   policy.Execute(() => httpClient.GetAsync("https://api.cloudprovider.com/data"));
+           </code>
+         </pre>
+   
+         <h2>Serverless Computing</h2>
+   
+         <p>Serverless architectures allow you to focus on code without managing infrastructure. Use functions for specific tasks:</p>
+   
+         <pre>
+           <code class="cloudcode">
+   // Serverless function in Node.js
+   exports.handler = async (event) => {
+       console.log('Received event:', JSON.stringify(event, null, 2));
+       return 'Hello from Lambda!';
+   };
+           </code>
+         </pre>
+   
+         <h2>Conclusion</h2>
+   
+         <p>You've explored building scalable and resilient cloud-native apps. Whether deploying microservices, implementing resilience, or leveraging serverless computing, cloud-native development empowers you to create robust applications on any major cloud provider. Happy coding!</p>
+      </article>
+   </body>
+   
+   </html>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mobile and Desktop</title>
+   <link rel="stylesheet" href="InfoText.css">
+</head>
+<body>
+   <body>
+      <section class="MenuBar">
+         <table>
+            <thead>
+               <tr>
+                  <td><a href="index.html"><img src="Untitled-1.png" alt="Logo"></a></td>
+                  <td class="NetCoreSection"><a href="NetCoreSection.html">.Net</a></td>
+                  <td>Why .Net 8.0</td>
+                  <td>Explore Fetuares .Net 8.0</td>
+                  <td>Docs</td>
+                  <td><a href="https://dotnet.microsoft.com/en-us/download">Downloads</a></td>
+                  <td><a href="https://dotnet.microsoft.com/en-us/platform/community">Community</a></td>
+               </tr>
+            </thead>
+         </table>
+      </section>
+      <article>
+         <h1>Cross-Platform Native App with Xamarin.Forms</h1>
+   
+         <h2>Shared Codebase using Xamarin.Forms</h2>
+   
+         <p>Developing cross-platform native apps with Xamarin.Forms allows you to share a significant portion of your codebase for Windows, macOS, iOS, and Android.</p>
+   
+         <h2>Example Xamarin.Forms Code:</h2>
+   
+         <pre>
+           <code class="csharpcode">
+   using Xamarin.Forms;
+   
+   namespace MyApp
+   {
+      public partial class App : Application
+      {
+         public App()
+         {
+            InitializeComponent();
+            MainPage = new NavigationPage(new MainPage());
+         }
+      }
+   
+      public class MainPage : ContentPage
+      {
+         public MainPage()
+         {
+            Title = "Xamarin.Forms App";
+   
+            Content = new StackLayout
+            {
+               Children = {
+                  new Label { Text = "Hello, Xamarin.Forms!" },
+                  new Button { Text = "Click Me!", Command = new Command(OnButtonClicked) }
+               }
+            };
+         }
+   
+         private void OnButtonClicked()
+         {
+            DisplayAlert("Button Clicked", "You clicked the button!", "OK");
+         }
+      }
+   
+      // Add more pages and shared code as needed
+   }
+           </code>
+         </pre>
+   
+         <p>This code defines a simple Xamarin.Forms application with a main page containing a label and a button. The button click event shows an alert.</p>
+   
+         <h2>Conclusion</h2>
+   
+         <p>You've set up a Xamarin.Forms project with shared code for building native apps on Windows, macOS, iOS, and Android. This example demonstrates a simple UI with a button click event. Further, you can create platform-specific UI as needed. Happy coding!</p>
+      </article>
+   </body>
+   
+   </html>
+   
+</body>
+</html>
