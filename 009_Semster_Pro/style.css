@@ -4,7 +4,7 @@ html {
 }
 
 body {
-   background-color: white;
+   background-color: rgb(250, 250, 250);
    color: black;
 
    
@@ -71,6 +71,7 @@ h1 {
    margin-top: 10vh;
 
 }
+
 .Header{
    font-weight: bolder;
    font-size: 1.5rem;
@@ -80,7 +81,7 @@ h1 {
 }
 button {
    font-family: monospace;
-   background-color: #f3f7fe;
+   background-color: linear-gradient(to right, #87CEEB, #1E90FF);;
    border: none;
    border-radius: 8px;
    width: 100px;
@@ -101,6 +102,7 @@ button:hover {
 Button > a{
    text-decoration: none;
    color: black;
+   background-color: linear-gradient(to right, #87CEEB, #1E90FF);
 }
 
 
@@ -114,8 +116,8 @@ Button > a{
 
 .card {
    background-color: white;
-   border-radius: 10px;
-   box-shadow: 0 0 0 5px #3b83f65f;
+   border-radius: 4%;
+   box-shadow: 0 0 0 5px rgb(81, 43, 212);
    padding: 1rem;
    margin: 1rem;
    transition: .3s;
@@ -133,7 +135,7 @@ Button > a{
    text-decoration: none;
 }
 .container:hover .card {
-   box-shadow: 0 0 0 6px #3b83f6;
+   box-shadow: 0 0 0 6px rgb(81, 43, 212);
    transform: scale(1.1);
    transition: .3s;
 }
@@ -155,4 +157,221 @@ Button > a{
 
 .container:hover .card::before {
    opacity: 1;
+}
+.cardContent{
+   color: blue;
+}
+.PageImage{
+   display: flex;
+   margin-top: 40vh;
+   margin-left: 40vh;
+   gap: 20rem;
+}
+.ImageContent{
+   display: flex;
+   margin-left: 41vh;
+   margin-top: 5vh;
+   gap: 8rem;
+   font-size: 1.2rem;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 1.2px;
+   margin-bottom: 10rem;
+}
+div > strong{
+   font-size: 1.5rem;
+   font-weight: bolder;
+   color: rgb(25, 6, 73);
+}
+
+/* Social Media Verlinkung */
+.social-buttons {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 20rem;
+   height: 5rem;
+   background-color: #f2f2f2;
+   box-shadow: 0px 0px 15px #00000027;
+   padding: 15px 10px;
+   border-radius: 5em;
+ }
+ 
+ .social-button {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   margin: 0 10px;
+   background-color: #fff;
+   box-shadow: 0px 0px 4px #00000027;
+   transition: 0.3s;
+ }
+ 
+ .social-button:hover {
+   background-color: #f2f2f2;
+   box-shadow: 0px 0px 6px 3px #00000027;
+ }
+ 
+ .social-buttons svg {
+   transition: 0.3s;
+   height: 20px;
+ }
+ 
+ .facebook {
+   background-color: #3b5998;
+ }
+ 
+ .facebook svg {
+   fill: #f2f2f2;
+ }
+ 
+ .facebook:hover svg {
+   fill: #3b5998;
+ }
+ 
+ .github {
+   background-color: #333;
+ }
+ 
+ .github svg {
+   width: 25px;
+   height: 25px;
+   fill: #f2f2f2;
+ }
+ 
+ .github:hover svg {
+   fill: #333;
+ }
+ 
+ .linkedin {
+   background-color: #0077b5;
+ }
+ 
+ .linkedin svg {
+   fill: #f2f2f2;
+ }
+ 
+ .linkedin:hover svg {
+   fill: #0077b5;
+ }
+ 
+ .instagram {
+   background-color: #c13584;
+ }
+ 
+ .instagram svg {
+   fill: #f2f2f2;
+ }
+ 
+ .instagram:hover svg {
+   fill: #c13584;
+ }
+.infobar{
+   border: 1px solid linear-gradient(to right, #87CEEB, #1E90FF);
+   background: linear-gradient(to right, #87CEEB, #1E90FF);
+   border-radius: 25px;
+   display: flex;
+   gap: 2rem;
+   margin-left: 50vh;
+   margin-right: 50vh;
+   margin-top: 10vh;
+   margin-bottom: 10vh;
+   padding: 2rem;
+   padding-top: 0rem;
+   font-size: 1.2rem;
+}
+.infobar  button{
+   margin-top: 3rem;
+   width: 200px;
+   font-weight: bold;
+}
+.infobar > p:first-child{
+   font-size: 2.4rem;
+   font-weight: bold;
+}
+.infobar > p:last-child{
+   font-size: 1.3rem;
+   font-weight: bold;
+   padding-top: 1rem;
+}
+/* Entwicklungs Umgebungen */
+.DevTools{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 12rem;
+}
+.card {
+   width: 190px;
+   height: 254px;
+   background: #3405a3;
+   border-radius: 15px;
+   box-shadow: 1px 5px 60px 0px #100a886b;
+   display: flex;
+
+  }
+  
+  .card .card-border-top {
+   width: 60%;
+   height: 3%;
+   background: #6b64f3;
+   margin: auto;
+   border-radius: 0px 0px 15px 15px;
+  }
+  
+  .card span {
+   font-weight: 600;
+   color: white;
+   text-align: center;
+   display: block;
+   padding-top: 10px;
+   font-size: 16px;
+  }
+  
+  .card .job {
+   font-weight: 400;
+   color: white;
+   display: block;
+   text-align: center;
+   padding-top: 3px;
+   font-size: 12px;
+  }
+  
+  .card img {
+   width: 70px;
+   height: 80px;
+   background: white;
+   border-radius: 15px;
+   margin: auto;
+   margin-top: 25px;
+   padding: 1rem;
+  }
+  
+  .card button {
+   padding: 8px 25px;
+   display: block;
+   margin: auto;
+   border-radius: 8px;
+   border: none;
+   margin-top: 30px;
+   background: #6b64f3;
+   color: white;
+   font-weight: 600;
+  }
+  
+  .card button:hover {
+   background: #534bf3;
+  }
+.card:hover {
+   transform: scale(1.1);
+   transition: .3s;
+}
+.MarginHeader{
+   margin: 0rem;
+   margin-bottom: 10vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
