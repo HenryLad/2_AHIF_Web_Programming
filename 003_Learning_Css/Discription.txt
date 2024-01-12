@@ -1,3 +1,36 @@
+/*
+Ausgabe von c Programmen
+#include <stdio.h>
+
+int main() {
+    // Ganzzahl (integer)
+    int integerVariable;
+    printf("Geben Sie eine Ganzzahl ein: ");
+    scanf("%d", &integerVariable);
+    printf("Ganzzahl eingegeben: %d\n", integerVariable);
+
+    // Gleitkommazahl (float)
+    float floatVariable;
+    printf("Geben Sie eine Gleitkommazahl ein: ");
+    scanf("%f", &floatVariable);
+    printf("Gleitkommazahl eingegeben: %f\n", floatVariable);
+
+    // Zeichen (char)
+    char charVariable;
+    printf("Geben Sie ein Zeichen ein: ");
+    scanf(" %c", &charVariable); // Achten Sie auf das Leerzeichen vor %c, um vorherige Whitespaces zu ignorieren
+    printf("Zeichen eingegeben: %c\n", charVariable);
+
+    // Zeichenkette (string)
+    char stringVariable[100]; // Annahme: Maximale Länge der Zeichenkette ist 99 Zeichen
+    printf("Geben Sie eine Zeichenkette ein: ");
+    scanf("%s", stringVariable);
+    printf("Zeichenkette eingegeben: %s\n", stringVariable);
+
+    return 0;
+}
+*/
+
 Basic String Functions
 
 int mystrlen(char *s)
