@@ -30,6 +30,31 @@ int main() {
     return 0;
 }
 */
+/*
+int mystrcatord(char *dest, char *first, char *second)
+{
+    int idxFirst = 0;
+    int idxSecond = 0;
+
+    int firstDone = 0;
+    int secondDone = 0;
+
+    while (!firstDone || !secondDone)
+    {
+        while (!firstDone && (secondDone || first[idxFirst] <= second[idxSecond]))
+        {
+            dest[idxFirst + idxSecond] = first[idxFirst];
+            firstDone = first[++idxFirst] == '\0';
+        }
+
+        while (!secondDone && (firstDone || second[idxSecond] <= first[idxFirst]))
+        {
+            dest[idxFirst + idxSecond] = second[idxSecond];
+            secondDone = second[++idxSecond] == '\0';
+        }
+    }
+}
+*/
 
 Basic String Functions
 
