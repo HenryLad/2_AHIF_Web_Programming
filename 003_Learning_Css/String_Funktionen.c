@@ -1,4 +1,5 @@
 #include <stdio.h>
+gcc String_Funktionen -o app && ./app
 
 // Funktion zum Berechnen der Länge eines Strings
 int strlen_custom(const char *str) {
